@@ -11,7 +11,7 @@ To run the AI-biopsy framework please see the Flowchart.pdf and follow these ste
 
 1) Install the TensorFlow. Follow the instruction from here: https://www.tensorflow.org/install/
 
-2) Pre-trained Models of CNN architectures should be downloaded from the "Pre-trained Models" part of https://github.com/wenwei202/terngrad/tree/master/slim#pre-trained-models and be located in your machine (e.g. GitHub_STORK/scripts/slim/run/checkpoint). The files for pre-trained models are available under the column named "Checkpoint".
+2) Pre-trained Models of CNN architectures should be downloaded from the "Pre-trained Models" part of https://github.com/wenwei202/terngrad/tree/master/slim#pre-trained-models and be located in your machine (e.g. GitHub_AI-biopsy/scripts/slim/run/checkpoint). The files for pre-trained models are available under the column named "Checkpoint".
 
 3) Divide the images with the original size into two or more classes based on the aim of classification (e.g., discrimination of good-quality and poor-quality embryos). 85% of images in each class will be selected as Train set (train and validation) and 15% for Test set. 
 
@@ -25,7 +25,7 @@ $ python convert.py ../Images/train process/ 0
 
 * It will save converted .tf records in the "process" directory.
 
-6) The Inception-V1 architecture should be run on the Train set images from the "AI-biopsy/scripts/slim" directory. First got the the following directory: STORK/scripts/slim. Then open load_inception_v1.sh located in "run/" directory and edit PRETRAINED_CHECKPOINT_DIR,TRAIN_DIR, and DATASET_DIR addresses. See the load_inception_v1.sh, for instance. Then, run the following command in shell script: 
+6) The Inception-V1 architecture should be run on the Train set images from the "AI-biopsy/scripts/slim" directory. First got the the following directory: AI-biopsy/scripts/slim. Then open load_inception_v1.sh located in "run/" directory and edit PRETRAINED_CHECKPOINT_DIR,TRAIN_DIR, and DATASET_DIR addresses. See the load_inception_v1.sh, for instance. Then, run the following command in shell script: 
 
 $ ./run/load_inception_v1.sh
 
