@@ -47,12 +47,5 @@ $ python predict.py v1 ../result/ ../../Images/test output.txt 2
 
 * v1 = inception-v1, ../Images/test = the address of test set images, out.txt = the output result file, 2 = number of classes
 
-* You can see output.txt in "GitHub_AIbiopsy/scripts/slim", for example.
-
-
-8) The accuracy can be measured using accuracy measurement codes ("acc.py") in "useful" folder. The output.txt file should be in the same folder that you are running acc.py. Then run the following code: 
-
-$ python acc.py
-
 
 
