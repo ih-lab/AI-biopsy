@@ -55,6 +55,4 @@ $ python predict.py v1 ../result/ ../../Images/test output.txt 2
 $ python acc.py
 
 
-*https://kwotsin.github.io/tech/2017/02/11/transfer-learning.html
-
 
