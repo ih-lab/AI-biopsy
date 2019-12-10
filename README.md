@@ -27,7 +27,7 @@ $ python convert.py ../Images/train process/ 0
 
 6) The Inception-V1 architecture should be run on the Train set images from the "AIbiopsy/scripts/slim" directory. First got the the following directory: AIbiopsy/scripts/slim. Then open load_inception_v1.sh located in "run/" directory and edit PRETRAINED_CHECKPOINT_DIR,TRAIN_DIR, and DATASET_DIR addresses. See the load_inception_v1.sh, for instance. Then, run the following command in shell script: 
 
-$ ./run/load_inception_v1.sh
+`$ ./run/load_inception_v1.sh`
 
 * If you got the bash error like permission denied, run the following line in your shell:
 $ chmod 777 load_inception_v1.sh
