@@ -29,7 +29,7 @@ $ python convert.py ../Images/train process/ 0
 
 ```bash
     ./run/load_inception_v1.sh
-    ```
+```
 
 * If you got the bash error like permission denied, run the following line in your shell:
 $ chmod 777 load_inception_v1.sh
