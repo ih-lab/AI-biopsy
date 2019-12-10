@@ -19,7 +19,9 @@ To run the AIbiopsy framework please see the Flowchart.pdf and follow these step
 
 5) Run the convert.py (it is located in the "AIbiopsy/scripts" directory) to allocate the suitable percentage of images to train and validation sets.the convert.py needs three arguments including: the address of images for training, the address of where the result will be located, and the percentage of validation images for the training step: 
 
-$ python convert.py ../Images/train process/ 0
+```bash
+python convert.py ../Images/train process/ 0
+```
 
 * Keep the percentage of validation images as 0 because we set 15% for validation inside the code
 
@@ -32,7 +34,10 @@ $ python convert.py ../Images/train process/ 0
 ```
 
 * If you got the bash error like permission denied, run the following line in your shell:
-$ chmod 777 load_inception_v1.sh
+
+```bash
+    chmod 777 load_inception_v1.sh
+```
 
 
 * Each script in slim dataset should be run separately based on the selected architecture. The slim folder contains some sub-folders. 
@@ -41,11 +46,11 @@ $ chmod 777 load_inception_v1.sh
 
 * see the result folder at scripts/result as the result of running the above script.
 
-* Note that the flag for --clone_on_cpu is set to "True". If you are going to use GPUs you should change this flag to "False".
-
 7) The trained algorithms should be tested using test set images. In folder "AIbiopsy/scripts/slim", predict.py loads a trained model on provided images. This code get 5 argu/resultments:
 
-$ python predict.py v1 ../result/ ../../Images/test output.txt 2
+```bash
+python predict.py v1 ../result/ ../../Images/test output.txt 2
+```
 
 * v1 = inception-v1, ../Images/test = the address of test set images, out.txt = the output result file, 2 = number of classes
 
