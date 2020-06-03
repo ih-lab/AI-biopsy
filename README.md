@@ -2,7 +2,7 @@
 
 Detect aggressive prostate cancer using MRI images independant of the biopsy.
 
-[![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/downloads/release/python-2715)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![AIbiopsy Logo](docs/logo.png)
